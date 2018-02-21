@@ -43,7 +43,7 @@ unionType = "test";
 console.log(`unionType : ${unionType}`);
 
 function add(a: number, b: number) : string {
-    return a + b +'';
+    return a + b + '';
 }
 
 console.log(add(12, 24));
