@@ -26,4 +26,16 @@ console.log(car);
 function neverReturns() {
     throw new Error('An error!');
 }
-neverReturns();
+//neverReturns();
+var canBeNull = 12;
+canBeNull = null;
+// union type
+var unionType;
+unionType = 1;
+console.log("unionType : " + unionType);
+unionType = "test";
+console.log("unionType : " + unionType);
+function add(a, b) {
+    return a + b + '';
+}
+console.log(add(12, 24));
