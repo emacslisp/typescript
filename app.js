@@ -23,3 +23,7 @@ var car = "BMW";
 console.log(car);
 car = { brand: "BMW", series: 3 };
 console.log(car);
+function neverReturns() {
+    throw new Error('An error!');
+}
+neverReturns();

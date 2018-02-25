@@ -33,3 +33,11 @@ console.log(car);
 car = { brand:"BMW", series: 3};
 console.log(car);
 
+function neverReturns(): never {
+    throw new Error('An error!');
+}
+
+//neverReturns();
+
+let canBeNull = 12;
+canBeNull = null;
