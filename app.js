@@ -39,3 +39,11 @@ function add(a, b) {
     return a + b + '';
 }
 console.log(add(12, 24));
+var addNumbers = function (number1, number2) {
+    return number1 + number2;
+};
+console.log(addNumbers(10, 20));
+var multiplyNumbers = function (number1, number2) {
+    return number1 * number2;
+};
+console.log(multiplyNumbers(10, 20));

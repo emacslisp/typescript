@@ -57,3 +57,22 @@ function add(a: number, b: number) : string {
 
 console.log(add(12, 24));
 
+const addNumbers = function(number1: number, number2: number): number {
+    return number1 + number2;
+}
+
+console.log(addNumbers(10,20));
+
+const multiplyNumbers = (number1: number, number2: number) => {
+    return number1 * number2;
+}
+
+console.log(multiplyNumbers(10,20));
+
+
+// ========== Default Parameters
+console.log("DEFAULT PARAMETERS");
+
+const countdown = (start: number): void => {
+    
+}
