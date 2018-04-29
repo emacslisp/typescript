@@ -1,15 +1,19 @@
 var MyMath;
 (function (MyMath) {
     var PI = 3.14;
-    function calculateCircumference(diameter) {
-        return diameter * PI;
-    }
-    MyMath.calculateCircumference = calculateCircumference;
-    function calculateRectangle(width, length) {
-        return width * length;
-    }
-    MyMath.calculateRectangle = calculateRectangle;
+    var Circle;
+    (function (Circle) {
+        function calculateCircumference(diameter) {
+            return diameter * PI;
+        }
+        Circle.calculateCircumference = calculateCircumference;
+        function calculateRectangle(width, length) {
+            return width * length;
+        }
+        Circle.calculateRectangle = calculateRectangle;
+    })(Circle = MyMath.Circle || (MyMath.Circle = {}));
 })(MyMath || (MyMath = {}));
 /// <reference path="MyMath.ts" />
-console.log(MyMath.calculateRectangle(10, 20));
-console.log(MyMath.calculateCircumference(3));
+var CircleMath = MyMath.Circle;
+console.log(CircleMath.calculateRectangle(10, 20));
+console.log(CircleMath.calculateCircumference(3));
