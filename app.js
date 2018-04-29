@@ -47,3 +47,10 @@ var multiplyNumbers = function (number1, number2) {
     return number1 * number2;
 };
 console.log(multiplyNumbers(10, 20));
+// ========== Default Parameters
+console.log("DEFAULT PARAMETERS");
+var countdown = function (start) {
+    if (start === void 0) { start = 10; }
+    console.log(start);
+};
+countdown(20);

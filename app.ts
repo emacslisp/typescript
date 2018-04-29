@@ -73,6 +73,8 @@ console.log(multiplyNumbers(10,20));
 // ========== Default Parameters
 console.log("DEFAULT PARAMETERS");
 
-const countdown = (start: number): void => {
-    
+const countdown = (start: number = 10): void => {
+    console.log(start);
 }
+
+countdown(20);
