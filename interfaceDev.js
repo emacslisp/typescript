@@ -25,5 +25,19 @@ var Person = /** @class */ (function () {
 }());
 var myPerson = new Person();
 myPerson.firstName = "Maximilian";
+myPerson.lastName = "Any";
 greet(myPerson);
 myPerson.greet("Anything");
+var myDoubleFunction;
+myDoubleFunction = function (value1, value2) {
+    return (value1 + value2) * 2;
+};
+console.log(myDoubleFunction(10, 20));
+var oldPerson = {
+    age: 27,
+    firstName: "Max",
+    greet: function (lastName) {
+        console.log("greet");
+    }
+};
+console.log(oldPerson);
