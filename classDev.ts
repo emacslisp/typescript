@@ -58,3 +58,15 @@ let plant = new Plant();
 console.log(plant.species);
 plant.species = "test";
 console.log(plant.species);
+
+
+// Static Properties & Methods
+class Helpers {
+    static PI: number = 3.14;
+    static calcCircumference(diameter: number): number {
+        return this.PI * diameter;
+    }
+}
+
+console.log(2* Helpers.PI);
+console.log(Helpers.calcCircumference(8));

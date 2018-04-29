@@ -1,0 +1,2 @@
+tsc
+node classDev.js
