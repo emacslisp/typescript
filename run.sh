@@ -1,2 +1,2 @@
-tsc
-node classDev.js
+tsc 
+node namespaceDev.js
